@@ -3,6 +3,7 @@
   width: 40px;
   border-radius: 50%;
   margin-right: 10px;
+  color: black;
 }
 
 .card-wrap {
@@ -21,19 +22,38 @@
   margin: 12px 0;
 }
 
-.love {
+.like-btn {
   background-repeat: no-repeat;
   height: 36px;
   width: 36px;
   background-size: 36px !important;
+  color: red;
 }
 
-.comment {
+.like-btn-unlike {
+  background-repeat: no-repeat;
+  height: 36px;
+  width: 36px;
+  background-size: 36px !important;
+  color: black;
+}
+
+.fa-comment {
   margin-left: 8px;
   background-repeat: no-repeat;
   height: 36px;
   width: 36px;
   background-size: 40px !important;
+  color: black;
+}
+
+.fa-paper-plane {
+  margin-left: 8px;
+  background-repeat: no-repeat;
+  height: 36px;
+  width: 36px;
+  background-size: 40px !important;
+  color: black;
 }
 
 .post-time {
@@ -79,18 +99,16 @@
   line-height: 0;
 }
 
-.delete-post-icon {
-  background-image: image-url("parts9");
+.fa-trash {
   background-repeat: no-repeat;
   width: 20px;
   height: 20px;
   background-size: 20px !important;
-  color: #262626;
+  color: grey;
   font-size: 20px;
 }
 
 .loved {
-  background-image: image-url("parts7");
   background-repeat: no-repeat;
   height: 36px;
   width: 36px;
@@ -104,12 +122,12 @@
   white-space: nowrap;
 }
 
-.delete-comment {
-  background-image: image-url("parts8");
+.fa-times {
   background-repeat: no-repeat;
   width: 11px;
   height: 11px;
   float: right;
   margin: 5px 0 0 10px;
   background-size: 11px !important;
+  color: lightgray;
 }
