@@ -1,7 +1,7 @@
 <% post.comments.each do |comment| %>
   <div class="mb-2">
     <% if comment.user == current_user %>
-      <%= link_to "", post_comment_path(post.id, comment), method: :delete, remote: true, class: "fas fa-times" %>
+      <%= link_to "", post_comment_path(post.id, comment), method: :delete, remote: true, class: "fa fa-times" %>
     <% end %>
     <span>
       <strong>
