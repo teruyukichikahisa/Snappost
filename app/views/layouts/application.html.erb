@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>SNAPPOST</title>
+    <title>Snappost</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -15,7 +15,7 @@
         <div class="logo">
           <a class="navbar-brand" href="<%= root_path%>">
             <%= fa_stacked_icon "camera inverse", base: "circle"%>
-            SNAPPOST
+            Snappost
           </a>
         </div>
         <div class="m-auto">
@@ -24,7 +24,7 @@
           </form>
         </div>
         <div class="user-section">
-          <%= link_to "post", new_post_path, class: "btn btn-primary" %>
+          <%= link_to "", new_post_path, class: "fa fa-plus fa-2x fa-black" %>
           <a><i class="fa fa-compass"></i></a>
           <a><i class="fa fa-heart"></i></a>
           <% if user_signed_in? %>
@@ -39,7 +39,6 @@
         </div>
       </div>
     </nav>
-          
 
     <% if flash[:notice] %>
       <div class="alert alert-info">
@@ -74,7 +73,8 @@
           <li>HASHTAGS</li>
           <li>LANGUAGE</li>
         </ul>
-        <p> Copyright © 2020 SNAPPOST </p>
+        <p> © 2020 SNAPPOST </p>
       </nav>
     </footer>
+  </body>
 </html>
