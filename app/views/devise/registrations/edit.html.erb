@@ -14,15 +14,6 @@
     <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
       <%= form_with model: current_user,url: registration_path(resource_name), local: true, html: {class: "form-horizontal form-edit-user"} do |f| %>
   <div class="form-group row">
-    <div class="col-sm-3 col-form-label">
-      <img class="avatar" src="https://instuigram-avatar.jpg">
-    </div>
-    <div class="col-sm-9">
-      <p class="name"><%=current_user.name %></p>
-      <a class="change-photo" href="">Change Profile Photo</a>
-    </div>
-  </div>
-  <div class="form-group row">
     <%= f.label :name, class: 'col-sm-3 col-form-label' %>
     <div class="col-sm-9">
       <%= f.text_field :name, class: 'form-control' %>
@@ -56,7 +47,7 @@
     <div class="col-sm-3">
     </div>
     <div class="col-sm-9">
-      <%= f.submit "Submit", class: 'btn btn-primary' %>
+      <%= f.submit "Update", class: 'btn btn-primary' %>
     </div>
   </div>
 <% end %>

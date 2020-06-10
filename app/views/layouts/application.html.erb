@@ -24,7 +24,9 @@
           </form>
         </div>
         <div class="user-section">
-          <%= link_to "", new_post_path, class: "fa fa-plus fa-2x fa-black" %>
+          <a href="<%= new_post_path %>">
+              <i class="fa fa-plus fa-2x"></i>
+            </a>
           <a><i class="fa fa-compass"></i></a>
           <a><i class="fa fa-heart"></i></a>
           <% if user_signed_in? %>
