@@ -8,13 +8,15 @@
     
     <div class="col-md-8 basic-info">
       <div class="user-wrapper">
-        <h2 class="username"><%= current_user.name %></h2>
-        <a class="edit-profile" href="<%= edit_user_registration_path%>">
-          <button>Edit Profile</button>
-        </a>
+        <h2 class="username"><%= @user.name %></h2>
+        <% if @user == current_user %>
+          <a class="edit-profile" href="<%= edit_user_registration_path%>">
+            <button>Edit Profile</button>
+          </a>
+        <% end %>
       </div>
         <table>
-          <% if @user == current_user %>
+          <% @user.name %>
             <tr>
               <th>Username</th><td><%= @user.username %></td>
             </tr>
@@ -30,7 +32,6 @@
             <tr>
               <th>Gender</th><td><%= @user.gender %></td>
             </tr>
-          <% end %>
         </table>
     </div>
   </div>
